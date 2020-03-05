@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  color: hsl(229, 6%, 66%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+
+.heading {
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+  width: 35%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.heading--light {
+  font-weight: 200;
+}
+
+.heading--bold {
+  font-weight: 600;
+}
+
+.heading p {
+  color: hsl(229, 6%, 66%);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 0 auto;
+  width: 80%;
+  grid-template-areas:
+    ". one ."
+    "two one four"
+    "two three four"
+    ". three . ";
+}
+
+.card {
+  height: 220px;
+  border-radius: 6px;
+  width: 90%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 8px 24px -8px grey;
+  justify-self: center;
+}
+
+.card--red {
+  border-top: 2px solid hsl(0, 78%, 62%);
+  border-top-width: thick;
+  grid-area: one;
+}
+
+.card--blue {
+  border-top: 2px solid hsl(212, 86%, 64%);
+  border-top-width: thick;
+  grid-area: four;
+}
+
+.card--orange {
+  border-top: 2px solid hsl(34, 97%, 64%);
+  border-top-width: thick;
+  grid-area: three;
+}
+
+.card--cyan {
+  border-top: 2px solid hsl(180, 62%, 55%);
+  border-top-width: thick;
+  grid-area: two;
+}
+
+.card__header h2 {
+  font-weight: 400 !important;
+  color: hsl(234, 12%, 34%);
+}
+
+.card__body {
+  line-height: 2;
+  padding-right: 10px;
+}
+
+.card__body img {
+  display: block;
+  float: right;
+  margin-top: 40px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 1rem;
+    width: auto;
+    height: auto;
+  }
+
+  .heading {
+    width: 100%;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .heading p {
+      margin-top: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    grid-template-areas: none;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  .card--red {
+    grid-area: none;
+  }
+
+  .card--blue {
+    grid-area: none;
+  }
+
+  .card--orange {
+    grid-area: none;
+  }
+
+  .card--cyan {
+    grid-area: none;
+  }
+}
