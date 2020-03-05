@@ -1,3 +1,6 @@
+# four-cards-flexgrid
+A four cards feature section using grid and flex
+
 # Frontend Mentor - Four card feature section
 
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
@@ -69,3 +72,4 @@ Feedback is always welcome, so if you have any to give on this challenge please 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
