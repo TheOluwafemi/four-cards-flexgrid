@@ -103,7 +103,7 @@ body {
 .card__body img {
   display: block;
   float: right;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .attribution {
@@ -115,7 +115,58 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 375px) {
+/** screen size 1020 and below  */
+@media only screen and (max-width: 1020px) {
+  .container {
+    padding: 1rem;
+    width: auto;
+    height: auto;
+  }
+
+  .heading {
+    width: 100%;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+
+  .heading p {
+      margin-top: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+    grid-template-areas: none;
+  }
+
+  .card {
+    flex: 0 35%;
+    margin: 1.5rem 1.5rem;
+  }
+
+  .card--red {
+    grid-area: none;
+  }
+
+  .card--blue {
+    grid-area: none;
+  }
+
+  .card--orange {
+    grid-area: none;
+  }
+
+  .card--cyan {
+    grid-area: none;
+  }
+}
+
+
+/** screen size 425 and below  */
+@media only screen and (max-width: 600px) {
   .container {
     padding: 1rem;
     width: auto;
@@ -141,7 +192,7 @@ body {
   }
 
   .card {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
 
   .card--red {
